@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-  <section class="button-creator">
+  <sec class="button-creator">
     <form id="controles">
       <label for="texto">Text</label>
       <input type="text" name="texto" id="texto">
@@ -17,9 +17,9 @@
       <label for="backgroundColor">Background Color</label>
       <input type="color" name="backgroundColor" id="backgroundColor">
       <label for="height">Height</label>
-      <input type="range" name="height" id="height" min="0" max="200">
+      <input type="range" name="height" id="height" min="0" max="50">
       <label for="width">Width</label>
-      <input type="range" name="width" id="width" min="0" max="600">
+      <input type="range" name="width" id="width" min="0" max="150">
       <label for="border">Border</label>
       <input type="text" name="border" id="border">
       <label for="borderRadius">Border-Radius</label>
@@ -31,12 +31,13 @@
       </select><!-- Font Family -->
       <label for="fontSize">Font Size</label>
       <input type="number" name="fontSize" id="fontSize">
+      <input type="button" id="copy-clipboard" value="Copy to Clipboard">
     </form><!-- controles -->
     <section class="resultado">
       <button class="btn">Click</button>
       <pre><code class="css"></code></pre>
     </section>
-  </section><!-- Button Creator -->
+  </sec tion><!-- Button Creator -->
   <script src="js/script.js"></script> 
 </body>
 </html>
