@@ -1,6 +1,7 @@
 const controles = document.getElementById('controles');
 const cssText = document.querySelector('.css');
 const btn = document.querySelector('.btn');
+const copyBtn = document.querySelector('#copy-clipboard')
 
 controles.addEventListener('change', handleChange)
 
@@ -60,3 +61,10 @@ function setValues() {
 function showCSS() {
     cssText.innerHTML = '<span>' + btn.style.cssText.split('; ').join(';</span><span>')
 }
+
+copyBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    let innerText = cssText.innerText
+    console.log(innerText)
+    window.navigator.clipboard.writeText(innerText)
+})

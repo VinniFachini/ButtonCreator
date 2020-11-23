@@ -50,3 +50,23 @@ input[type="range"]#borderRadius{
 .btn{
   cursor: pointer;
 }
+#copy-clipboard{
+  margin-top: 10px;
+  color: black;
+  background-color: #ccc;
+  border: none;
+  padding:  5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#copy-clipboard:hover{
+  background-color: #aaa;
+}
+
+pre > code.css {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .1);
+  max-width: 500px;
+}
